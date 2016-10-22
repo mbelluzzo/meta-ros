@@ -9,4 +9,8 @@ SRC_URI = "git://github.com/mavlink/mavlink-gbp-release.git;branch=${SRCBRANCH}"
 
 S = "${WORKDIR}/git"
 
+SRC_URI += "\
+	file://0001-Modify-INCLUDE_DIRS-to-fix-yocto-build.patch \
+"
+
 inherit catkin
