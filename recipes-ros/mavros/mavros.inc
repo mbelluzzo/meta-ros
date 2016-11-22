@@ -9,3 +9,5 @@ SRCREV = "64031594d569e23ab0ddb50bf9ff195cc4c70336"
 S = "${WORKDIR}/git/${ROS_SPN}"
 
 inherit catkin
+
+TARGET_CXXFLAGS = " -I${STAGING_INCDIR}/../../opt/ros/indigo/include "
